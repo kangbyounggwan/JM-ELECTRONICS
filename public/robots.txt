@@ -1,0 +1,13 @@
+# JM Electronics - robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.jmelectronics.co.kr/sitemap.xml
+
+# Disallow admin or private paths (if any)
+Disallow: /api/
+Disallow: /*.json$
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1

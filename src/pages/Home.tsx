@@ -2,10 +2,11 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { useLanguage } from '../i18n/LanguageContext'
+import SEO from '../components/SEO'
 
 export default function Home() {
   const [current, setCurrent] = useState(0)
-  const { t } = useLanguage()
+  const { t, lang } = useLanguage()
 
   const slides = [
     {
@@ -43,6 +44,14 @@ export default function Home() {
 
   return (
     <div>
+      <SEO
+        title={lang === 'ko' ? 'PCB 전문 제조기업' : 'Professional PCB Manufacturer'}
+        description={lang === 'ko'
+          ? 'JM일렉트로닉스는 AS9100 인증 PCB 전문 제조기업입니다. 항공우주, 국방, 의료기기용 고품질 PCB를 제작합니다.'
+          : 'JM Electronics is an AS9100 certified PCB manufacturer for aerospace, defense, and medical devices.'
+        }
+        path="/"
+      />
       {/* Hero Slider */}
       <section className="relative h-screen">
         {slides.map((slide, i) => (

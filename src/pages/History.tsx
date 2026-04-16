@@ -1,32 +1,53 @@
 import SectionHeader from '../components/SectionHeader'
 import ScrollReveal from '../components/ScrollReveal'
+import SEO from '../components/SEO'
 import { useLanguage } from '../i18n/LanguageContext'
 
 export default function History() {
-  const { t } = useLanguage()
+  const { t, lang } = useLanguage()
 
-  const timeline = [
-    { year: '2000', month: '03', title: '회사 설립', desc: 'JM일렉트로닉스 창립' },
-    { year: '2003', month: '06', title: 'UL 인증 획득', desc: '미국 UL 안전인증' },
-    { year: '2004', month: '01', title: '상호 변경', desc: '(주)제이엠일렉트로닉스' },
-    { year: '2011', month: '09', title: 'ISO 9001 인증', desc: '품질경영시스템 인증' },
-    { year: '2014', month: '03', title: '신사옥 이전', desc: '안산시 단원구 현 위치' },
-    { year: '2018', month: '05', title: 'INNOBIZ 인증', desc: '기술혁신형 중소기업' },
-    { year: '2020', month: '07', title: '기업부설연구소', desc: 'PCB 기술 R&D 연구소' },
-    { year: '2024', month: '02', title: 'AS9100D 인증', desc: '항공우주 품질경영시스템' },
+  const timelineDates = [
+    { year: '2000', month: '03' },
+    { year: '2003', month: '06' },
+    { year: '2004', month: '01' },
+    { year: '2011', month: '09' },
+    { year: '2014', month: '03' },
+    { year: '2018', month: '05' },
+    { year: '2020', month: '07' },
+    { year: '2024', month: '02' },
   ]
 
-  const certs = [
-    { name: 'ISO 9001', desc: '품질경영시스템', image: '/certs/iso-quality.png' },
-    { name: 'ISO 14001', desc: '환경경영시스템', image: '/certs/iso-environment.png' },
-    { name: 'AS9100D', desc: '우주항공 품질경영', image: '/certs/as9100.png' },
-    { name: 'UL', desc: '미국 안전인증', image: '/certs/ul.png' },
-    { name: 'INNOBIZ', desc: '기술혁신형 중소기업', image: '/certs/innobiz.png' },
-    { name: '기업부설연구소', desc: 'PCB 기술 R&D', image: '/certs/research-center.png' },
+  const timeline = timelineDates.map((date, i) => ({
+    ...date,
+    title: t.history.timeline[i].title,
+    desc: t.history.timeline[i].desc,
+  }))
+
+  const certImages = [
+    '/certs/iso-quality.png',
+    '/certs/iso-environment.png',
+    '/certs/as9100.png',
+    '/certs/ul.png',
+    '/certs/innobiz.png',
+    '/certs/research-center.png',
   ]
+
+  const certs = t.history.certs.map((cert, i) => ({
+    ...cert,
+    image: certImages[i],
+  }))
 
   return (
     <div>
+      <SEO
+        title={t.history.pageTitle}
+        description={lang === 'ko'
+          ? 'JM일렉트로닉스 회사 연혁. 2000년 창립부터 AS9100D 인증까지 24년 성장의 발자취. ISO 9001, UL, INNOBIZ 인증.'
+          : 'JM Electronics company history. 24 years of growth from 2000 founding to AS9100D certification. ISO 9001, UL, INNOBIZ certified.'
+        }
+        path="/history"
+        keywords={lang === 'ko' ? 'JM일렉트로닉스 연혁, PCB회사 역사, AS9100D, ISO9001, UL인증, INNOBIZ' : 'JM Electronics history, PCB company history, AS9100D, ISO9001, UL certification, INNOBIZ'}
+      />
       {/* Hero */}
       <section
         className="relative h-[50vh] min-h-[400px] flex items-center justify-center text-white"
@@ -45,14 +66,14 @@ export default function History() {
 
       {/* Timeline */}
       <section className="py-24 bg-white">
-        <SectionHeader number="01" subtitle="History" title="회사 연혁" variant="light" />
+        <SectionHeader number="01" subtitle="History" title={t.history.sectionTitle} variant="light" />
         <div className="max-w-5xl mx-auto px-8">
           <ScrollReveal animation="fade-up">
             <div className="text-center mb-16">
-              <h3 className="text-2xl md:text-3xl font-bold text-dark mb-4">성장 발자취</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-dark mb-4">{t.history.growthTitle}</h3>
               <p className="text-xl md:text-2xl text-dark leading-relaxed">
-                JM일렉트로닉스는 2000년 설립 이래<br/>
-                <span className="text-primary font-bold">"기술과 품질로 고객의 신뢰를 쌓아온 24년"</span>의 역사를 이어가고 있습니다.
+                {t.history.growthDesc1}<br/>
+                <span className="text-primary font-bold">{t.history.growthDesc2}</span>{t.history.growthDesc3}
               </p>
               <div className="w-24 h-1 bg-primary mx-auto mt-8"></div>
             </div>
@@ -105,10 +126,10 @@ export default function History() {
 
       {/* Certifications */}
       <section className="py-24 bg-white">
-        <SectionHeader number="02" subtitle="Certification" title="인증 현황" variant="light" />
+        <SectionHeader number="02" subtitle="Certification" title={t.history.certSectionTitle} variant="light" />
         <div className="max-w-6xl mx-auto px-8">
           <ScrollReveal animation="fade-up">
-            <p className="text-lg text-gray mb-12">JM일렉트로닉스의 기술력과 품질을 인정받은 인증서입니다.</p>
+            <p className="text-lg text-gray mb-12">{t.history.certDesc}</p>
           </ScrollReveal>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-10">
             {certs.map((cert, i) => (

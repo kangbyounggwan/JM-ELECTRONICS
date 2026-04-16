@@ -1,39 +1,40 @@
 import { Lightbulb, Smile, Flame, Users, Target } from 'lucide-react'
 import ScrollReveal from '../components/ScrollReveal'
 import SectionHeader from '../components/SectionHeader'
+import SEO from '../components/SEO'
 import { useLanguage } from '../i18n/LanguageContext'
 
-const coreValues = [
-  { icon: Lightbulb, title: 'Creativity', subtitle: '창의', desc: '혁신적 사고로 새로운 가치 창출' },
-  { icon: Smile, title: 'Positiveness', subtitle: '긍정', desc: '긍정적 마인드로 도전' },
-  { icon: Flame, title: 'Passion', subtitle: '열정', desc: '열정으로 최고를 추구' },
-  { icon: Users, title: 'Harmony', subtitle: '화합', desc: '협력과 소통의 문화' },
-  { icon: Target, title: 'Challenge', subtitle: '도전', desc: '끊임없는 도전과 성장' },
-]
+const valueIcons = [Lightbulb, Smile, Flame, Users, Target]
 
-const philosophies = [
-  {
-    title: '기술과 품질',
-    desc: '최고의 기술력과 품질로 고객에게 신뢰를 제공합니다',
-    image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80',
-  },
-  {
-    title: '공동운명체',
-    desc: '임직원과 함께 성장하는 상생의 가치를 실현합니다',
-    image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80',
-  },
-  {
-    title: '고객지향',
-    desc: '고객의 성공이 곧 우리의 성공이라는 신념으로',
-    image: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&q=80',
-  },
+const philosophyImages = [
+  'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80',
+  'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80',
+  'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&q=80',
 ]
 
 export default function About() {
-  const { t } = useLanguage()
+  const { t, lang } = useLanguage()
+
+  const coreValues = t.about.coreValues.map((value, i) => ({
+    ...value,
+    icon: valueIcons[i],
+  }))
+
+  const philosophies = t.about.philosophies.map((phil, i) => ({
+    ...phil,
+    image: philosophyImages[i],
+  }))
 
   return (
     <div>
+      <SEO
+        title={t.about.pageTitle}
+        description={lang === 'ko'
+          ? '24년 기술력의 JM일렉트로닉스. 경영이념, 핵심가치, 비전을 소개합니다.'
+          : '24 years of expertise at JM Electronics. Our philosophy, core values, and vision.'
+        }
+        path="/about"
+      />
       {/* Hero */}
       <section
         className="relative h-[50vh] min-h-[400px] flex items-center justify-center text-white"
@@ -65,11 +66,11 @@ export default function About() {
             <div className="absolute inset-0 flex flex-col justify-center px-[10%] md:px-16 lg:px-20 text-white">
               <p className="text-white/70 text-base tracking-widest mb-6">OUR MISSION</p>
               <h3 className="text-4xl md:text-5xl font-bold leading-tight mb-8">
-                "기술과 품질로<br/>고객의 신뢰를 만듭니다"
+                "{t.about.missionQuote1}<br/>{t.about.missionQuote2}"
               </h3>
               <p className="text-white/80 text-lg leading-relaxed">
-                인재와 기술을 바탕으로 최고의 PCB를 제작하여<br/>
-                고객과 함께 성장하는 기업이 되겠습니다.
+                {t.about.missionDesc1}<br/>
+                {t.about.missionDesc2}
               </p>
             </div>
           </div>
@@ -81,14 +82,12 @@ export default function About() {
             </ScrollReveal>
             <ScrollReveal animation="fade-up" delay={100}>
               <h2 className="text-4xl md:text-5xl font-bold text-dark mb-8 leading-tight">
-                24년의 기술력,<br/>신뢰로 이어갑니다
+                {t.about.aboutTitle1}<br/>{t.about.aboutTitle2}
               </h2>
             </ScrollReveal>
             <ScrollReveal animation="fade-up" delay={200}>
               <p className="text-gray text-lg leading-relaxed mb-12">
-                2000년 설립 이래, JM일렉트로닉스는 IT장비, 항공우주, 의료기기, 통신장비 분야에
-                고품질 PCB 솔루션을 공급해왔습니다. AS9100 인증을 보유한 품질경영시스템과
-                부설연구소의 기술력으로 고객의 요구에 최적화된 제품을 제공합니다.
+                {t.about.aboutDesc}
               </p>
             </ScrollReveal>
 
@@ -96,10 +95,10 @@ export default function About() {
             <ScrollReveal animation="fade-up" delay={300}>
             <div className="grid grid-cols-4 gap-6 border-t border-gray-200 pt-10">
               {[
-                { value: '24', unit: '년+', label: '업력' },
-                { value: '16', unit: '명+', label: '전문인력' },
-                { value: '6', unit: '개', label: '전문부서' },
-                { value: 'R&D', unit: '', label: '연구소' },
+                { value: '24', unit: t.about.stats.yearsUnit, label: t.about.stats.yearsLabel },
+                { value: '16', unit: t.about.stats.staffUnit, label: t.about.stats.staffLabel },
+                { value: '6', unit: t.about.stats.deptUnit, label: t.about.stats.deptLabel },
+                { value: 'R&D', unit: '', label: t.about.stats.rdLabel },
               ].map((stat, i) => (
                 <div key={i} className="text-center">
                   <div className="flex items-baseline justify-center">
@@ -117,7 +116,7 @@ export default function About() {
 
       {/* Management Philosophy */}
       <section className="py-24 bg-bg-light">
-        <SectionHeader number="01" subtitle="Philosophy" title="경영이념" variant="dark" />
+        <SectionHeader number="01" subtitle="Philosophy" title={t.about.philosophyTitle} variant="dark" />
         <div className="max-w-7xl mx-auto px-8">
           <div className="grid md:grid-cols-3 gap-0">
             {philosophies.map((item, i) => (
@@ -148,7 +147,7 @@ export default function About() {
 
       {/* Core Values */}
       <section className="py-24 bg-white">
-        <SectionHeader number="02" subtitle="Core Values" title="핵심 가치" variant="light" />
+        <SectionHeader number="02" subtitle="Core Values" title={t.about.coreValuesTitle} variant="light" />
         <div className="max-w-7xl mx-auto px-8">
           <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
             {coreValues.map((item, i) => (

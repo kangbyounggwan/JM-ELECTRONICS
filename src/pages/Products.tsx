@@ -2,172 +2,134 @@ import { useState } from 'react'
 import { ChevronRight, ChevronDown, Layers, Zap, Shield, HeartPulse, X } from 'lucide-react'
 import ScrollReveal from '../components/ScrollReveal'
 import SectionHeader from '../components/SectionHeader'
+import SEO from '../components/SEO'
 import { useLanguage } from '../i18n/LanguageContext'
 
-const processSteps = [
-  {
-    step: '01',
-    name: '설계/CAM',
-    desc: '회로 설계 및 데이터 검증',
-    detail: 'CAM 소프트웨어를 활용하여 고객 데이터를 검증하고 제조에 최적화된 설계로 변환합니다. DFM 검토를 통해 생산성과 품질을 사전에 확보합니다.',
-    equipment: ['Frontline Genesis', 'Valor NPI', 'CAM350'],
-    image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80',
-  },
-  {
-    step: '02',
-    name: '내층',
-    desc: '내층 회로 형성',
-    detail: '동박적층판(CCL)에 드라이필름을 라미네이팅하고 노광, 현상, 에칭 공정을 통해 내층 회로 패턴을 형성합니다.',
-    equipment: ['LDI 노광기', '자동 현상라인', '에칭라인'],
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80',
-  },
-  {
-    step: '03',
-    name: '적층',
-    desc: '다층 기판 압착',
-    detail: '내층 코어와 프리프레그, 동박을 순서대로 적층하여 고온고압 환경에서 압착합니다. 층간 정합도와 두께 균일성을 확보합니다.',
-    equipment: ['진공 적층 프레스', '레이업 룸', '두께 측정기'],
-    image: 'https://images.unsplash.com/photo-1597852074816-d933c7d2b988?w=800&q=80',
-  },
-  {
-    step: '04',
-    name: '드릴링',
-    desc: '홀 가공',
-    detail: 'CNC 드릴링 머신으로 스루홀, 블라인드/베리드 비아를 가공합니다. 레이저 드릴로 마이크로 비아를 정밀 가공합니다.',
-    equipment: ['CNC 드릴머신', 'CO2 레이저', 'UV 레이저'],
-    image: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80',
-  },
-  {
-    step: '05',
-    name: '도금',
-    desc: '동도금 처리',
-    detail: '무전해 동도금으로 홀 내벽을 전도성 있게 만든 후, 전기 동도금으로 필요한 두께까지 도금합니다.',
-    equipment: ['무전해 도금라인', '전해 동도금라인', '두께 측정기'],
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
-  },
-  {
-    step: '06',
-    name: '외층',
-    desc: '외층 회로 형성',
-    detail: '외층에 드라이필름을 라미네이팅하고 LDI 노광, 현상, 에칭 공정을 통해 정밀한 외층 회로를 형성합니다.',
-    equipment: ['LDI 노광기', '자동 에칭라인', 'AOI 검사기'],
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80',
-  },
-  {
-    step: '07',
-    name: '솔더마스크',
-    desc: '절연층 도포',
-    detail: '회로 보호와 솔더링 영역 정의를 위해 솔더마스크 잉크를 도포하고 노광, 현상하여 패턴을 형성합니다.',
-    equipment: ['스크린 프린터', 'LDI 노광기', '자동 현상라인'],
-    image: 'https://images.unsplash.com/photo-1597852074816-d933c7d2b988?w=800&q=80',
-  },
-  {
-    step: '08',
-    name: '실크인쇄',
-    desc: '부품 마킹',
-    detail: '부품 위치, 극성, 제품 정보 등을 인쇄하여 조립 및 유지보수를 용이하게 합니다.',
-    equipment: ['잉크젯 프린터', '스크린 프린터', 'UV 경화기'],
-    image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80',
-  },
-  {
-    step: '09',
-    name: '표면처리',
-    desc: 'HASL/ENIG 등',
-    detail: '납땜성 확보와 산화 방지를 위해 HASL, ENIG, OSP 등 다양한 표면처리를 적용합니다.',
-    equipment: ['HASL 라인', 'ENIG 도금라인', 'OSP 라인'],
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
-  },
-  {
-    step: '10',
-    name: '검사/출하',
-    desc: '품질 검사 및 출하',
-    detail: 'AOI, 전기검사, 외관검사를 통해 품질을 확인하고, 포장 및 출하합니다.',
-    equipment: ['Flying Probe', 'AOI', '외관 검사대'],
-    image: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80',
-  },
+const processImages = [
+  'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80',
+  'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80',
+  'https://images.unsplash.com/photo-1597852074816-d933c7d2b988?w=800&q=80',
+  'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80',
+  'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+  'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80',
+  'https://images.unsplash.com/photo-1597852074816-d933c7d2b988?w=800&q=80',
+  'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80',
+  'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+  'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80',
 ]
 
-const productCategories = [
-  {
-    number: '02',
-    subtitle: 'Multi-Layer PCB',
-    title: '다층 PCB',
-    icon: Layers,
-    desc: '4층~20층 이상의 고밀도 다층 기판 제작',
-    features: ['HDI 기판', 'BGA/CSP', 'Rigid-Flex', 'Any Layer'],
-    specs: [
-      { label: '층수', value: '4~20층+' },
-      { label: '최소 선폭', value: '75μm' },
-      { label: '최소 홀', value: '0.15mm' },
-    ],
-    products: [
-      { name: '서버/네트워크 장비', image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&q=80' },
-      { name: '산업용 제어기', image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&q=80' },
-      { name: '통신 모듈', image: 'https://images.unsplash.com/photo-1597852074816-d933c7d2b988?w=400&q=80' },
-    ],
-  },
-  {
-    number: '03',
-    subtitle: 'High Frequency PCB',
-    title: '고주파 기판',
-    icon: Zap,
-    desc: '5G/통신장비용 고주파 특수 기판',
-    features: ['RF 기판', 'Antenna PCB', 'Rogers', 'Teflon'],
-    specs: [
-      { label: '주파수', value: '~77GHz' },
-      { label: '유전율', value: '2.2~10.2' },
-      { label: '손실률', value: '0.001~' },
-    ],
-    products: [
-      { name: '5G 안테나', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80' },
-      { name: 'RF 모듈', image: 'https://images.unsplash.com/photo-1597852074816-d933c7d2b988?w=400&q=80' },
-      { name: '레이더 시스템', image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=400&q=80' },
-    ],
-  },
-  {
-    number: '04',
-    subtitle: 'Defense & Aerospace',
-    title: '방산/항공',
-    icon: Shield,
-    desc: 'AS9100 인증 기반 항공우주 품질',
-    features: ['MIL-SPEC', '고신뢰성', '내환경성', 'IPC Class 3'],
-    specs: [
-      { label: '인증', value: 'AS9100D' },
-      { label: '규격', value: 'MIL-PRF-31032' },
-      { label: '신뢰성', value: 'Class 3' },
-    ],
-    products: [
-      { name: '항공전자장비', image: 'https://images.unsplash.com/photo-1474302770737-173ee21bab63?w=400&q=80' },
-      { name: '위성통신장비', image: 'https://images.unsplash.com/photo-1516849677043-ef67c9557e16?w=400&q=80' },
-      { name: '방산전자장비', image: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&q=80' },
-    ],
-  },
-  {
-    number: '05',
-    subtitle: 'Medical Device',
-    title: '의료기기',
-    icon: HeartPulse,
-    desc: '의료기기용 고정밀 PCB 솔루션',
-    features: ['고정밀도', '생체적합', 'FDA 대응', 'ISO 13485'],
-    specs: [
-      { label: '인증', value: 'ISO 13485' },
-      { label: '규격', value: 'IPC-A-610' },
-      { label: '청정도', value: 'Class 10K' },
-    ],
-    products: [
-      { name: '진단장비', image: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?w=400&q=80' },
-      { name: '환자 모니터링', image: 'https://images.unsplash.com/photo-1530497610245-94d3c16cda28?w=400&q=80' },
-      { name: '의료 영상장비', image: 'https://images.unsplash.com/photo-1581595220892-b0739db3ba8c?w=400&q=80' },
-    ],
-  },
+const processEquipment = [
+  ['Frontline Genesis', 'Valor NPI', 'CAM350'],
+  ['LDI', 'Dev Line', 'Etch Line'],
+  ['Vacuum Press', 'Lay-up Room', 'Gauge'],
+  ['CNC Drill', 'CO2 Laser', 'UV Laser'],
+  ['Electroless Line', 'Electrolytic Line', 'Gauge'],
+  ['LDI', 'Etch Line', 'AOI'],
+  ['Screen Printer', 'LDI', 'Dev Line'],
+  ['Inkjet', 'Screen Printer', 'UV Cure'],
+  ['HASL Line', 'ENIG Line', 'OSP Line'],
+  ['Flying Probe', 'AOI', 'Visual Inspect'],
 ]
 
 export default function Products() {
   const [openProcess, setOpenProcess] = useState<number | null>(null)
-  const { t } = useLanguage()
+  const { t, lang } = useLanguage()
+
+  const processSteps = t.products.processSteps.map((step, i) => ({
+    step: String(i + 1).padStart(2, '0'),
+    name: step.name,
+    desc: step.desc,
+    detail: step.detail,
+    equipment: processEquipment[i],
+    image: processImages[i],
+  }))
+
+  const productCategories = [
+    {
+      number: '02',
+      subtitle: t.products.categories.multilayer.subtitle,
+      title: t.products.categories.multilayer.title,
+      icon: Layers,
+      desc: t.products.categories.multilayer.desc,
+      features: ['HDI', 'BGA/CSP', 'Rigid-Flex', 'Any Layer'],
+      specs: [
+        { label: t.products.specs.layers, value: '4~20+' },
+        { label: t.products.specs.minWidth, value: '75μm' },
+        { label: t.products.specs.minHole, value: '0.15mm' },
+      ],
+      products: [
+        { name: t.products.productNames.server, image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&q=80' },
+        { name: t.products.productNames.industrial, image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&q=80' },
+        { name: t.products.productNames.comm, image: 'https://images.unsplash.com/photo-1597852074816-d933c7d2b988?w=400&q=80' },
+      ],
+    },
+    {
+      number: '03',
+      subtitle: t.products.categories.highFreq.subtitle,
+      title: t.products.categories.highFreq.title,
+      icon: Zap,
+      desc: t.products.categories.highFreq.desc,
+      features: ['RF PCB', 'Antenna PCB', 'Rogers', 'Teflon'],
+      specs: [
+        { label: t.products.specs.frequency, value: '~77GHz' },
+        { label: t.products.specs.dielectric, value: '2.2~10.2' },
+        { label: t.products.specs.lossRate, value: '0.001~' },
+      ],
+      products: [
+        { name: t.products.productNames.antenna5g, image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80' },
+        { name: t.products.productNames.rfModule, image: 'https://images.unsplash.com/photo-1597852074816-d933c7d2b988?w=400&q=80' },
+        { name: t.products.productNames.radar, image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=400&q=80' },
+      ],
+    },
+    {
+      number: '04',
+      subtitle: t.products.categories.defense.subtitle,
+      title: t.products.categories.defense.title,
+      icon: Shield,
+      desc: t.products.categories.defense.desc,
+      features: ['MIL-SPEC', lang === 'ko' ? '고신뢰성' : 'High Reliability', lang === 'ko' ? '내환경성' : 'Environmental', 'IPC Class 3'],
+      specs: [
+        { label: t.products.specs.certification, value: 'AS9100D' },
+        { label: t.products.specs.standard, value: 'MIL-PRF-31032' },
+        { label: t.products.specs.reliability, value: 'Class 3' },
+      ],
+      products: [
+        { name: t.products.productNames.avionics, image: 'https://images.unsplash.com/photo-1474302770737-173ee21bab63?w=400&q=80' },
+        { name: t.products.productNames.satellite, image: 'https://images.unsplash.com/photo-1516849677043-ef67c9557e16?w=400&q=80' },
+        { name: t.products.productNames.defenseElec, image: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&q=80' },
+      ],
+    },
+    {
+      number: '05',
+      subtitle: t.products.categories.medical.subtitle,
+      title: t.products.categories.medical.title,
+      icon: HeartPulse,
+      desc: t.products.categories.medical.desc,
+      features: [lang === 'ko' ? '고정밀도' : 'High Precision', lang === 'ko' ? '생체적합' : 'Biocompatible', 'FDA', 'ISO 13485'],
+      specs: [
+        { label: t.products.specs.certification, value: 'ISO 13485' },
+        { label: t.products.specs.standard, value: 'IPC-A-610' },
+        { label: t.products.specs.cleanroom, value: 'Class 10K' },
+      ],
+      products: [
+        { name: t.products.productNames.diagnostic, image: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?w=400&q=80' },
+        { name: t.products.productNames.patientMonitor, image: 'https://images.unsplash.com/photo-1530497610245-94d3c16cda28?w=400&q=80' },
+        { name: t.products.productNames.medicalImaging, image: 'https://images.unsplash.com/photo-1581595220892-b0739db3ba8c?w=400&q=80' },
+      ],
+    },
+  ]
 
   return (
     <div>
+      <SEO
+        title={t.products.pageTitle}
+        description={lang === 'ko'
+          ? 'JM일렉트로닉스 PCB 제조공정과 생산품. 설계/CAM부터 검사/출하까지 10단계 공정. 다층PCB, 고주파기판, 방산/항공, 의료기기 PCB.'
+          : 'JM Electronics PCB manufacturing process and products. 10-step process from design to shipping. Multi-layer, RF, defense, medical PCB.'
+        }
+        path="/products"
+        keywords={lang === 'ko' ? 'PCB제조공정, PCB생산품, 다층PCB, 고주파기판, HDI기판, 드릴링, 도금, 솔더마스크' : 'PCB manufacturing, PCB products, multi-layer PCB, RF PCB, HDI, drilling, plating, solder mask'}
+      />
       {/* Hero */}
       <section
         className="relative h-[50vh] min-h-[400px] flex items-center justify-center text-white"
@@ -255,7 +217,7 @@ export default function Products() {
                     {processSteps[openProcess].detail}
                   </p>
                   <div>
-                    <p className="text-sm font-semibold text-dark mb-3">주요 설비</p>
+                    <p className="text-sm font-semibold text-dark mb-3">{t.products.mainEquipment}</p>
                     <div className="flex flex-wrap gap-2">
                       {processSteps[openProcess].equipment.map((eq, j) => (
                         <span key={j} className="px-3 py-1.5 bg-white rounded-lg text-sm text-dark shadow-sm">
@@ -343,10 +305,10 @@ export default function Products() {
       <section className="py-12 bg-bg-light border-t border-gray-200">
         <div className="max-w-7xl mx-auto px-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-gray">
-            프로젝트에 맞는 PCB 솔루션이 필요하시면 언제든 연락주세요.
+            {t.products.contactBanner}
           </p>
           <a href="/contact" className="text-primary font-medium hover:underline flex items-center gap-1">
-            문의하기 →
+            {t.products.contactLink} →
           </a>
         </div>
       </section>

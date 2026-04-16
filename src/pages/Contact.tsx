@@ -1,11 +1,21 @@
 import { MapPin, Phone, Mail, Printer, Clock } from 'lucide-react'
+import SEO from '../components/SEO'
 import { useLanguage } from '../i18n/LanguageContext'
 
 export default function Contact() {
-  const { t } = useLanguage()
+  const { t, lang } = useLanguage()
 
   return (
     <div>
+      <SEO
+        title={t.contact.pageTitle}
+        description={lang === 'ko'
+          ? 'JM일렉트로닉스 문의하기. 경기도 안산시 단원구 첨단로133. 전화 031-495-3766. PCB 견적 및 기술 상담.'
+          : 'Contact JM Electronics. 133 Cheomdan-ro, Ansan, Korea. Tel: 031-495-3766. PCB quotation and technical consultation.'
+        }
+        path="/contact"
+        keywords={lang === 'ko' ? 'JM일렉트로닉스 연락처, PCB 문의, PCB 견적, 안산 PCB 업체' : 'JM Electronics contact, PCB inquiry, PCB quotation, Ansan PCB manufacturer'}
+      />
       {/* Hero */}
       <section
         className="relative h-[50vh] min-h-[400px] flex items-center justify-center text-white"

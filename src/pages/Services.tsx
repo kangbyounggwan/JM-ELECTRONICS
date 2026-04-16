@@ -1,10 +1,11 @@
 import { Layers, Zap, Shield, HeartPulse, Users, Sparkles, Target } from 'lucide-react'
 import ScrollReveal from '../components/ScrollReveal'
 import SectionHeader from '../components/SectionHeader'
+import SEO from '../components/SEO'
 import { useLanguage } from '../i18n/LanguageContext'
 
 export default function Services() {
-  const { t } = useLanguage()
+  const { t, lang } = useLanguage()
 
   const businessAreas = [
     {
@@ -71,6 +72,15 @@ export default function Services() {
 
   return (
     <div>
+      <SEO
+        title={t.services.pageTitle}
+        description={lang === 'ko'
+          ? 'JM일렉트로닉스 품질관리 시스템과 사업영역. 다층PCB, 고주파기판, 방산/항공, 의료기기 PCB 전문.'
+          : 'JM Electronics quality management and business areas. Multi-layer PCB, RF PCB, defense/aerospace, medical PCB specialist.'
+        }
+        path="/services"
+        keywords={lang === 'ko' ? 'PCB 품질관리, 다층PCB, 고주파기판, 방산PCB, 의료기기PCB, AS9100' : 'PCB quality, multi-layer PCB, RF PCB, defense PCB, medical PCB, AS9100'}
+      />
       {/* Hero */}
       <section
         className="relative h-[50vh] min-h-[400px] flex items-center justify-center text-white"
