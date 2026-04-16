@@ -1,0 +1,3171 @@
+{
+  "version": "2.10",
+  "children": [
+    {
+      "type": "frame",
+      "id": "bi8Au",
+      "x": 0,
+      "y": 0,
+      "name": "Frame",
+      "clip": true,
+      "width": 800,
+      "height": 600,
+      "fill": "#FFFFFF",
+      "layout": "none"
+    },
+    {
+      "type": "frame",
+      "id": "DKXAe",
+      "x": 0,
+      "y": 0,
+      "name": "JM Electronics Landing Page",
+      "width": 1440,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "hExYl",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 80,
+          "fill": "#FFFFFF",
+          "padding": [
+            0,
+            120
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Ygbav",
+              "name": "logo",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "IkNVU",
+                  "name": "logoIcon",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "#4A9FD8",
+                  "cornerRadius": 8
+                },
+                {
+                  "type": "text",
+                  "id": "6hqST",
+                  "name": "logoText",
+                  "fill": "#1A1A1A",
+                  "content": "JM Electronics",
+                  "fontFamily": "Inter",
+                  "fontSize": 24,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "TfUtC",
+              "name": "nav",
+              "gap": 40,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "iIKww",
+                  "name": "navHome",
+                  "fill": "#1A1A1A",
+                  "content": "홈",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "T03gE",
+                  "name": "navAbout",
+                  "fill": "#666666",
+                  "content": "회사소개",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "Qi6hE",
+                  "name": "navService",
+                  "fill": "#666666",
+                  "content": "서비스",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "o5pQX",
+                  "name": "navPortfolio",
+                  "fill": "#666666",
+                  "content": "포트폴리오",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "aPt2z",
+                  "name": "navContact",
+                  "fill": "#666666",
+                  "content": "문의하기",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "dr92z",
+              "name": "ctaBtn",
+              "fill": "#4A9FD8",
+              "cornerRadius": 8,
+              "padding": [
+                12,
+                24
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "3ShBp",
+                  "name": "ctaBtnText",
+                  "fill": "#FFFFFF",
+                  "content": "상담 신청",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "wefRn",
+          "name": "Hero Section",
+          "width": "fill_container",
+          "height": 600,
+          "fill": "#F7F8FA",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            100,
+            120
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "wyYvU",
+              "name": "heroContent",
+              "layout": "vertical",
+              "gap": 24,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "bTRs2",
+                  "name": "heroBadge",
+                  "fill": "#E8F4FC",
+                  "cornerRadius": 20,
+                  "gap": 8,
+                  "padding": [
+                    8,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "a8N4l",
+                      "name": "heroBadgeIcon",
+                      "fill": "#4A9FD8",
+                      "width": 8,
+                      "height": 8
+                    },
+                    {
+                      "type": "text",
+                      "id": "xjKfd",
+                      "name": "heroBadgeText",
+                      "fill": "#4A9FD8",
+                      "content": "디스플레이 솔루션 전문기업",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "9sNy4",
+                  "name": "heroTitle",
+                  "fill": "#1A1A1A",
+                  "textGrowth": "fixed-width",
+                  "width": 800,
+                  "content": "첨단 디스플레이 기술로\n미래를 설계합니다",
+                  "lineHeight": 1.2,
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 56,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "Pjt0Q",
+                  "name": "heroDesc",
+                  "fill": "#666666",
+                  "textGrowth": "fixed-width",
+                  "width": 700,
+                  "content": "주식회사 제이엠일렉트로닉스는 디스플레이 및 반도체 분야의\n핵심 기술력을 바탕으로 고객의 성공을 함께 만들어갑니다.",
+                  "lineHeight": 1.6,
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 18
+                },
+                {
+                  "type": "frame",
+                  "id": "gwpNV",
+                  "name": "heroCtas",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "V6CJI",
+                      "name": "heroCtaPrimary",
+                      "fill": "#4A9FD8",
+                      "cornerRadius": 8,
+                      "padding": [
+                        16,
+                        32
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "2MGZg",
+                          "name": "heroCtaPrimaryText",
+                          "fill": "#FFFFFF",
+                          "content": "상담 문의하기",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "foCoQ",
+                      "name": "heroCtaSecondary",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 8,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#4A9FD8"
+                      },
+                      "padding": [
+                        16,
+                        32
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "3bJZ7",
+                          "name": "heroCtaSecondaryText",
+                          "fill": "#4A9FD8",
+                          "content": "회사소개 보기",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "WzJ5h",
+          "name": "Services Section",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            80,
+            120
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "XC6sZ",
+              "name": "servicesHeader",
+              "layout": "vertical",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "1bM33",
+                  "name": "servicesLabel",
+                  "fill": "#4A9FD8",
+                  "content": "SERVICES",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "a2AiA",
+                  "name": "servicesTitle",
+                  "fill": "#1A1A1A",
+                  "content": "핵심 서비스",
+                  "fontFamily": "Inter",
+                  "fontSize": 40,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "8U0dE",
+                  "name": "servicesDesc",
+                  "fill": "#666666",
+                  "content": "고객의 비즈니스 성장을 위한 맞춤형 IT 솔루션을 제공합니다",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "4WOoy",
+              "name": "servicesGrid",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "4KmKV",
+                  "name": "card1",
+                  "width": "fill_container",
+                  "fill": "#F7F8FA",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "4b08y",
+                      "name": "card1Icon",
+                      "width": 56,
+                      "height": 56,
+                      "fill": "#E8F4FC",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "b3XM3",
+                          "name": "card1IconInner",
+                          "width": 28,
+                          "height": 28,
+                          "iconFontName": "monitor",
+                          "iconFontFamily": "lucide",
+                          "fill": "#4A9FD8"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "Wb9xv",
+                      "name": "card1Title",
+                      "fill": "#1A1A1A",
+                      "content": "디스플레이 솔루션",
+                      "fontFamily": "Inter",
+                      "fontSize": 22,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "VLDoT",
+                      "name": "card1Desc",
+                      "fill": "#666666",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "DF, PSR 등 디스플레이 핵심 부품 및 소재 개발/생산을 통해 고품질 디스플레이 제품을 제공합니다.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "1NT0Z",
+                  "name": "card2",
+                  "width": "fill_container",
+                  "fill": "#F7F8FA",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "OhpzL",
+                      "name": "card2Icon",
+                      "width": 56,
+                      "height": 56,
+                      "fill": "#E8F4FC",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "syEcR",
+                          "name": "card2IconInner",
+                          "width": 28,
+                          "height": 28,
+                          "iconFontName": "badge-check",
+                          "iconFontFamily": "lucide",
+                          "fill": "#4A9FD8"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "KS1TT",
+                      "name": "card2Title",
+                      "fill": "#1A1A1A",
+                      "content": "품질 관리 시스템",
+                      "fontFamily": "Inter",
+                      "fontSize": 22,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "822xG",
+                      "name": "card2Desc",
+                      "fill": "#666666",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "체계적인 품질 경영 시스템과 최종 검사 프로세스를 통해 제로 불량을 목표로 합니다.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "yFsdw",
+                  "name": "card3",
+                  "width": "fill_container",
+                  "fill": "#F7F8FA",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "u1Now",
+                      "name": "card3Icon",
+                      "width": 56,
+                      "height": 56,
+                      "fill": "#E8F4FC",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "cn7eX",
+                          "name": "card3IconInner",
+                          "width": 28,
+                          "height": 28,
+                          "iconFontName": "flask-conical",
+                          "iconFontFamily": "lucide",
+                          "fill": "#4A9FD8"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "8fdSZ",
+                      "name": "card3Title",
+                      "fill": "#1A1A1A",
+                      "content": "기술 연구 개발",
+                      "fontFamily": "Inter",
+                      "fontSize": 22,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "WjcZT",
+                      "name": "card3Desc",
+                      "fill": "#666666",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "부설연구소를 통한 지속적인 R&D 투자로 첨단 디스플레이 기술 혁신을 이끌어갑니다.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "EeJCg",
+                  "name": "card4",
+                  "width": "fill_container",
+                  "fill": "#F7F8FA",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "cmKrW",
+                      "name": "card4Icon",
+                      "width": 56,
+                      "height": 56,
+                      "fill": "#E8F4FC",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "ttVQ3",
+                          "name": "card4IconInner",
+                          "width": 28,
+                          "height": 28,
+                          "iconFontName": "settings",
+                          "iconFontFamily": "lucide",
+                          "fill": "#4A9FD8"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "FIdF5",
+                      "name": "card4Title",
+                      "fill": "#1A1A1A",
+                      "content": "맞춤형 사양 설계",
+                      "fontFamily": "Inter",
+                      "fontSize": 22,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "8DTPT",
+                      "name": "card4Desc",
+                      "fill": "#666666",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "고객의 요구사항에 맞는 최적의 사양 설계와 기술 컨설팅 서비스를 제공합니다.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "KkgtW",
+          "name": "Products Section",
+          "width": "fill_container",
+          "fill": "#F7F8FA",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            80,
+            120
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "DxAoX",
+              "name": "productsHeader",
+              "layout": "vertical",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "FZDcK",
+                  "name": "productsLabel",
+                  "fill": "#4A9FD8",
+                  "content": "PRODUCTS",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "lkN7B",
+                  "name": "productsTitle",
+                  "fill": "#1A1A1A",
+                  "content": "주요 생산품",
+                  "fontFamily": "Inter",
+                  "fontSize": 40,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "keTC3",
+                  "name": "productsDesc",
+                  "fill": "#666666",
+                  "content": "다양한 산업 분야에 고품질 PCB 솔루션을 제공합니다",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "pRblG",
+              "name": "newDiagram",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 40,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "sbawt",
+                  "name": "topRow",
+                  "gap": 60,
+                  "justifyContent": "center",
+                  "alignItems": "end",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "HS2vp",
+                      "name": "p1",
+                      "width": 140,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "ToM2v",
+                          "name": "p1i",
+                          "width": 48,
+                          "height": 48,
+                          "fill": {
+                            "type": "gradient",
+                            "gradientType": "radial",
+                            "enabled": true,
+                            "rotation": 0,
+                            "size": {
+                              "width": 1,
+                              "height": 1
+                            },
+                            "colors": [
+                              {
+                                "color": "#4A9FD8",
+                                "position": 0
+                              },
+                              {
+                                "color": "#2D7DB5",
+                                "position": 1
+                              }
+                            ]
+                          },
+                          "cornerRadius": 24,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "ws789",
+                              "name": "p1icon",
+                              "width": 24,
+                              "height": 24,
+                              "iconFontName": "monitor",
+                              "iconFontFamily": "lucide",
+                              "fill": "#FFFFFF"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "JNI9G",
+                          "name": "p1t",
+                          "fill": "#1A1A1A",
+                          "content": "IT장비\nSET-TOP BOX",
+                          "lineHeight": 1.4,
+                          "textAlign": "center",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dUUDn",
+                      "name": "p2",
+                      "width": 140,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "FzEOv",
+                          "name": "p2i",
+                          "width": 48,
+                          "height": 48,
+                          "fill": {
+                            "type": "gradient",
+                            "gradientType": "radial",
+                            "enabled": true,
+                            "rotation": 0,
+                            "size": {
+                              "width": 1,
+                              "height": 1
+                            },
+                            "colors": [
+                              {
+                                "color": "#4A9FD8",
+                                "position": 0
+                              },
+                              {
+                                "color": "#2D7DB5",
+                                "position": 1
+                              }
+                            ]
+                          },
+                          "cornerRadius": 24,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "hisOc",
+                              "name": "p2icon",
+                              "width": 24,
+                              "height": 24,
+                              "iconFontName": "plane",
+                              "iconFontFamily": "lucide",
+                              "fill": "#FFFFFF"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "2Vr5V",
+                          "name": "p2t",
+                          "fill": "#1A1A1A",
+                          "content": "방산\n항공우주",
+                          "lineHeight": 1.4,
+                          "textAlign": "center",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "SReAo",
+                      "name": "p3",
+                      "width": 140,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "iKQhB",
+                          "name": "p3i",
+                          "width": 48,
+                          "height": 48,
+                          "fill": {
+                            "type": "gradient",
+                            "gradientType": "radial",
+                            "enabled": true,
+                            "rotation": 0,
+                            "size": {
+                              "width": 1,
+                              "height": 1
+                            },
+                            "colors": [
+                              {
+                                "color": "#4A9FD8",
+                                "position": 0
+                              },
+                              {
+                                "color": "#2D7DB5",
+                                "position": 1
+                              }
+                            ]
+                          },
+                          "cornerRadius": 24,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "BAQy2",
+                              "name": "p3icon",
+                              "width": 24,
+                              "height": 24,
+                              "iconFontName": "gauge",
+                              "iconFontFamily": "lucide",
+                              "fill": "#FFFFFF"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "opKbH",
+                          "name": "p3t",
+                          "fill": "#1A1A1A",
+                          "content": "디지털\n전력량계",
+                          "lineHeight": 1.4,
+                          "textAlign": "center",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "mVDlC",
+                      "name": "p4",
+                      "width": 140,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "NUW39",
+                          "name": "p4i",
+                          "width": 48,
+                          "height": 48,
+                          "fill": {
+                            "type": "gradient",
+                            "gradientType": "radial",
+                            "enabled": true,
+                            "rotation": 0,
+                            "size": {
+                              "width": 1,
+                              "height": 1
+                            },
+                            "colors": [
+                              {
+                                "color": "#4A9FD8",
+                                "position": 0
+                              },
+                              {
+                                "color": "#2D7DB5",
+                                "position": 1
+                              }
+                            ]
+                          },
+                          "cornerRadius": 24,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "TrxY7",
+                              "name": "p4icon",
+                              "width": 24,
+                              "height": 24,
+                              "iconFontName": "radio",
+                              "iconFontFamily": "lucide",
+                              "fill": "#FFFFFF"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "VF3ws",
+                          "name": "p4t",
+                          "fill": "#1A1A1A",
+                          "content": "통신장비\n광모듈",
+                          "lineHeight": 1.4,
+                          "textAlign": "center",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "3Jr9J",
+                  "name": "centerRow",
+                  "width": "fill_container",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "nCYQb",
+                      "name": "centerLogo",
+                      "width": 180,
+                      "height": 180,
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 90,
+                      "stroke": {
+                        "thickness": 4,
+                        "fill": "#E53935"
+                      },
+                      "layout": "vertical",
+                      "gap": 4,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "BaJHi",
+                          "name": "cLogoJ",
+                          "fill": "#4A9FD8",
+                          "content": "JM",
+                          "fontFamily": "Inter",
+                          "fontSize": 48,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ka4Iq",
+                          "name": "cLogoText",
+                          "fill": "#1A1A1A",
+                          "content": "ELECTRONICS",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "PegQi",
+                          "name": "cLogoSub",
+                          "fill": "#E53935",
+                          "content": "Printed Circuit Board",
+                          "fontFamily": "Inter",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "N624k",
+                  "name": "bottomRow",
+                  "gap": 60,
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "xNRMf",
+                      "name": "p5",
+                      "width": 140,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "7Kpvp",
+                          "name": "p5i",
+                          "width": 48,
+                          "height": 48,
+                          "fill": {
+                            "type": "gradient",
+                            "gradientType": "radial",
+                            "enabled": true,
+                            "rotation": 0,
+                            "size": {
+                              "width": 1,
+                              "height": 1
+                            },
+                            "colors": [
+                              {
+                                "color": "#4A9FD8",
+                                "position": 0
+                              },
+                              {
+                                "color": "#2D7DB5",
+                                "position": 1
+                              }
+                            ]
+                          },
+                          "cornerRadius": 24,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "6a3Do",
+                              "name": "p5icon",
+                              "width": 24,
+                              "height": 24,
+                              "iconFontName": "calculator",
+                              "iconFontFamily": "lucide",
+                              "fill": "#FFFFFF"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "Z2uO7",
+                          "name": "p5t",
+                          "fill": "#1A1A1A",
+                          "content": "금전등록기",
+                          "lineHeight": 1.4,
+                          "textAlign": "center",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "TxJuN",
+                      "name": "p6",
+                      "width": 140,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "xei7q",
+                          "name": "p6i",
+                          "width": 48,
+                          "height": 48,
+                          "fill": {
+                            "type": "gradient",
+                            "gradientType": "radial",
+                            "enabled": true,
+                            "rotation": 0,
+                            "size": {
+                              "width": 1,
+                              "height": 1
+                            },
+                            "colors": [
+                              {
+                                "color": "#4A9FD8",
+                                "position": 0
+                              },
+                              {
+                                "color": "#2D7DB5",
+                                "position": 1
+                              }
+                            ]
+                          },
+                          "cornerRadius": 24,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "fLYZP",
+                              "name": "p6icon",
+                              "width": 24,
+                              "height": 24,
+                              "iconFontName": "heart-pulse",
+                              "iconFontFamily": "lucide",
+                              "fill": "#FFFFFF"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "roX97",
+                          "name": "p6t",
+                          "fill": "#1A1A1A",
+                          "content": "의료장비",
+                          "lineHeight": 1.4,
+                          "textAlign": "center",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "8ndMe",
+                      "name": "p7",
+                      "width": 140,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "ZZiXZ",
+                          "name": "p7i",
+                          "width": 48,
+                          "height": 48,
+                          "fill": {
+                            "type": "gradient",
+                            "gradientType": "radial",
+                            "enabled": true,
+                            "rotation": 0,
+                            "size": {
+                              "width": 1,
+                              "height": 1
+                            },
+                            "colors": [
+                              {
+                                "color": "#4A9FD8",
+                                "position": 0
+                              },
+                              {
+                                "color": "#2D7DB5",
+                                "position": 1
+                              }
+                            ]
+                          },
+                          "cornerRadius": 24,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "BgpZU",
+                              "name": "p7icon",
+                              "width": 24,
+                              "height": 24,
+                              "iconFontName": "camera",
+                              "iconFontFamily": "lucide",
+                              "fill": "#FFFFFF"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "oTd2A",
+                          "name": "p7t",
+                          "fill": "#1A1A1A",
+                          "content": "CCTV\n블랙박스",
+                          "lineHeight": 1.4,
+                          "textAlign": "center",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "8jRCF",
+                      "name": "p8",
+                      "width": 140,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "yNdXO",
+                          "name": "p8i",
+                          "width": 48,
+                          "height": 48,
+                          "fill": {
+                            "type": "gradient",
+                            "gradientType": "radial",
+                            "enabled": true,
+                            "rotation": 0,
+                            "size": {
+                              "width": 1,
+                              "height": 1
+                            },
+                            "colors": [
+                              {
+                                "color": "#4A9FD8",
+                                "position": 0
+                              },
+                              {
+                                "color": "#2D7DB5",
+                                "position": 1
+                              }
+                            ]
+                          },
+                          "cornerRadius": 24,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "vAsj2",
+                              "name": "p8icon",
+                              "width": 24,
+                              "height": 24,
+                              "iconFontName": "lightbulb",
+                              "iconFontFamily": "lucide",
+                              "fill": "#FFFFFF"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "xDqn2",
+                          "name": "p8t",
+                          "fill": "#1A1A1A",
+                          "content": "조명기기",
+                          "lineHeight": 1.4,
+                          "textAlign": "center",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "D2S0D",
+          "name": "History Section",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            80,
+            120
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "F4S6d",
+              "name": "historyHeader",
+              "layout": "vertical",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Cm4eB",
+                  "name": "historyLabel",
+                  "fill": "#4A9FD8",
+                  "content": "HISTORY",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "MSzBN",
+                  "name": "historyTitle",
+                  "fill": "#1A1A1A",
+                  "content": "회사 연혁",
+                  "fontFamily": "Inter",
+                  "fontSize": 40,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "ALt6W",
+                  "name": "historyDesc",
+                  "fill": "#666666",
+                  "content": "기술과 품질로 신뢰를 쌓아온 제이엠일렉트로닉스의 발자취",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "HlrR8",
+              "name": "newTimeline",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "5vZaK",
+                  "name": "row1",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "wmlr5",
+                      "name": "m1",
+                      "width": 350,
+                      "layout": "vertical",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "AFsqs",
+                          "name": "m1Date",
+                          "fill": "#4A9FD8",
+                          "content": "2000. 07",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 24,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ayFIV",
+                          "name": "m1Line",
+                          "width": "fill_container",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "Pq8iu",
+                              "name": "m1Left",
+                              "width": "fill_container",
+                              "height": 2,
+                              "fill": "#FFFFFF"
+                            },
+                            {
+                              "type": "ellipse",
+                              "id": "4p5iI",
+                              "name": "m1Dot",
+                              "fill": "#4A9FD8",
+                              "width": 14,
+                              "height": 14
+                            },
+                            {
+                              "type": "frame",
+                              "id": "VGKuq",
+                              "name": "m1Right",
+                              "width": "fill_container",
+                              "height": 2,
+                              "fill": "#4A9FD8"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "J3XND",
+                          "name": "m1Desc",
+                          "fill": "#1A1A1A",
+                          "content": "㈜제이엠 설립",
+                          "textAlign": "center",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "jsdUr",
+                      "name": "m2",
+                      "width": 350,
+                      "layout": "vertical",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "rYDvz",
+                          "name": "m2Date",
+                          "fill": "#4A9FD8",
+                          "content": "2003",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 24,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "j32G4",
+                          "name": "m2Line",
+                          "width": "fill_container",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "kcVvl",
+                              "name": "m2Left",
+                              "width": "fill_container",
+                              "height": 2,
+                              "fill": "#4A9FD8"
+                            },
+                            {
+                              "type": "ellipse",
+                              "id": "YeHDL",
+                              "name": "m2Dot",
+                              "fill": "#4A9FD8",
+                              "width": 14,
+                              "height": 14
+                            },
+                            {
+                              "type": "frame",
+                              "id": "YNDs8",
+                              "name": "m2Right",
+                              "width": "fill_container",
+                              "height": 2,
+                              "fill": "#4A9FD8"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "HMzR3",
+                          "name": "m2Desc",
+                          "fill": "#1A1A1A",
+                          "content": "UL 인증 취득",
+                          "textAlign": "center",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "1uTjv",
+                      "name": "m3",
+                      "width": 350,
+                      "layout": "vertical",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "tlD7n",
+                          "name": "m3Date",
+                          "fill": "#4A9FD8",
+                          "content": "2004. 10",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 24,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "SzqBU",
+                          "name": "m3Line",
+                          "width": "fill_container",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "0PnxV",
+                              "name": "m3Left",
+                              "width": "fill_container",
+                              "height": 2,
+                              "fill": "#4A9FD8"
+                            },
+                            {
+                              "type": "ellipse",
+                              "id": "LJw6y",
+                              "name": "m3Dot",
+                              "fill": "#4A9FD8",
+                              "width": 14,
+                              "height": 14
+                            },
+                            {
+                              "type": "frame",
+                              "id": "AT4LY",
+                              "name": "m3Right",
+                              "width": "fill_container",
+                              "height": 2,
+                              "fill": "#FFFFFF"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "d4gzw",
+                          "name": "m3Desc",
+                          "fill": "#1A1A1A",
+                          "content": "상호변경\n㈜제이엠일렉트로닉스",
+                          "lineHeight": 1.4,
+                          "textAlign": "center",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "4DsiF",
+                  "name": "row2",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "MTZHv",
+                      "name": "m4",
+                      "width": 350,
+                      "layout": "vertical",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "F9yTN",
+                          "name": "m4Date",
+                          "fill": "#4A9FD8",
+                          "content": "2011. 05",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 24,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "IrTe0",
+                          "name": "m4Line",
+                          "width": "fill_container",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "KJSDE",
+                              "name": "m4Left",
+                              "width": "fill_container",
+                              "height": 2,
+                              "fill": "#FFFFFF"
+                            },
+                            {
+                              "type": "ellipse",
+                              "id": "bmJpv",
+                              "name": "m4Dot",
+                              "fill": "#4A9FD8",
+                              "width": 14,
+                              "height": 14
+                            },
+                            {
+                              "type": "frame",
+                              "id": "e9ZtK",
+                              "name": "m4Right",
+                              "width": "fill_container",
+                              "height": 2,
+                              "fill": "#4A9FD8"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "qjfk5",
+                          "name": "m4Desc",
+                          "fill": "#1A1A1A",
+                          "content": "ISO 9001, 14001\n인증 취득",
+                          "lineHeight": 1.4,
+                          "textAlign": "center",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "NTWAJ",
+                      "name": "m5",
+                      "width": 350,
+                      "layout": "vertical",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "DQzN0",
+                          "name": "m5Date",
+                          "fill": "#4A9FD8",
+                          "content": "2014. 10",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 24,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "0McyZ",
+                          "name": "m5Line",
+                          "width": "fill_container",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "UySHv",
+                              "name": "m5Left",
+                              "width": "fill_container",
+                              "height": 2,
+                              "fill": "#4A9FD8"
+                            },
+                            {
+                              "type": "ellipse",
+                              "id": "F7lhR",
+                              "name": "m5Dot",
+                              "fill": "#4A9FD8",
+                              "width": 14,
+                              "height": 14
+                            },
+                            {
+                              "type": "frame",
+                              "id": "6zPrm",
+                              "name": "m5Right",
+                              "width": "fill_container",
+                              "height": 2,
+                              "fill": "#4A9FD8"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "5lZLi",
+                          "name": "m5Desc",
+                          "fill": "#1A1A1A",
+                          "content": "신사옥 확장 이전\nDRILL/ROUTER/BBT 라인 구축",
+                          "lineHeight": 1.4,
+                          "textAlign": "center",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "IVu5O",
+                      "name": "m6",
+                      "width": 350,
+                      "layout": "vertical",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ntgLG",
+                          "name": "m6Date",
+                          "fill": "#4A9FD8",
+                          "content": "2020. 12",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 24,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "8VXAP",
+                          "name": "m6Line",
+                          "width": "fill_container",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "9gmkq",
+                              "name": "m6Left",
+                              "width": "fill_container",
+                              "height": 2,
+                              "fill": "#4A9FD8"
+                            },
+                            {
+                              "type": "ellipse",
+                              "id": "eafnx",
+                              "name": "m6Dot",
+                              "fill": "#4A9FD8",
+                              "width": 14,
+                              "height": 14
+                            },
+                            {
+                              "type": "frame",
+                              "id": "EnlDX",
+                              "name": "m6Right",
+                              "width": "fill_container",
+                              "height": 2,
+                              "fill": "#FFFFFF"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "rAYvW",
+                          "name": "m6Desc",
+                          "fill": "#1A1A1A",
+                          "content": "기업부설연구소 설립",
+                          "lineHeight": 1.4,
+                          "textAlign": "center",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "4Ntby",
+                  "name": "row3",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ie9FY",
+                      "name": "m7",
+                      "width": 350,
+                      "layout": "vertical",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "HEBDv",
+                          "name": "m7Date",
+                          "fill": "#4A9FD8",
+                          "content": "2024. 08",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 24,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "h0KtV",
+                          "name": "m7Line",
+                          "width": "fill_container",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "BlyAi",
+                              "name": "m7Left",
+                              "width": "fill_container",
+                              "height": 2,
+                              "fill": "#FFFFFF"
+                            },
+                            {
+                              "type": "ellipse",
+                              "id": "xQVWI",
+                              "name": "m7Dot",
+                              "fill": "#4A9FD8",
+                              "width": 14,
+                              "height": 14
+                            },
+                            {
+                              "type": "frame",
+                              "id": "mqNTt",
+                              "name": "m7Right",
+                              "width": "fill_container",
+                              "height": 2,
+                              "fill": "#4A9FD8"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "psf80",
+                          "name": "m7Desc",
+                          "fill": "#1A1A1A",
+                          "content": "기술혁신형 중소기업\n(Inno-Biz) 인증 취득",
+                          "lineHeight": 1.4,
+                          "textAlign": "center",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "TfjxV",
+                      "name": "m8",
+                      "width": 350,
+                      "layout": "vertical",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "t0yWP",
+                          "name": "m8Date",
+                          "fill": "#4A9FD8",
+                          "content": "2024. 12",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 24,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Eaux5",
+                          "name": "m8Line",
+                          "width": "fill_container",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "BuEWc",
+                              "name": "m8Left",
+                              "width": "fill_container",
+                              "height": 2,
+                              "fill": "#4A9FD8"
+                            },
+                            {
+                              "type": "ellipse",
+                              "id": "VEg3K",
+                              "name": "m8Dot",
+                              "fill": "#4A9FD8",
+                              "width": 14,
+                              "height": 14
+                            },
+                            {
+                              "type": "frame",
+                              "id": "hDWYh",
+                              "name": "m8Right",
+                              "width": "fill_container",
+                              "height": 2,
+                              "fill": "#4A9FD8"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "Sw63q",
+                          "name": "m8Desc",
+                          "fill": "#1A1A1A",
+                          "content": "AS9100 항공우주\n품질경영인증 취득",
+                          "lineHeight": 1.4,
+                          "textAlign": "center",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "f1oMk",
+                      "name": "m9",
+                      "width": 350,
+                      "layout": "vertical",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "3eiC7",
+                          "name": "m9Date",
+                          "fill": "#1A1A1A",
+                          "content": "2026",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 24,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Tq4AI",
+                          "name": "m9Line",
+                          "width": "fill_container",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "wtlRO",
+                              "name": "m9Left",
+                              "width": "fill_container",
+                              "height": 2,
+                              "fill": "#4A9FD8"
+                            },
+                            {
+                              "type": "ellipse",
+                              "id": "dFdUN",
+                              "name": "m9Dot",
+                              "fill": "#1A1A1A",
+                              "width": 14,
+                              "height": 14
+                            },
+                            {
+                              "type": "frame",
+                              "id": "GikwE",
+                              "name": "m9Right",
+                              "width": "fill_container",
+                              "height": 2,
+                              "fill": "#FFFFFF"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "DWOUl",
+                          "name": "m9Desc",
+                          "fill": "#1A1A1A",
+                          "content": "국가 첨단전략산업\n기술혁신 사업 참여",
+                          "lineHeight": 1.4,
+                          "textAlign": "center",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "qSqcc",
+          "name": "About Section",
+          "width": "fill_container",
+          "fill": "#1A1A1A",
+          "gap": 80,
+          "padding": [
+            80,
+            120
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "5yr1Q",
+              "name": "aboutContent",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "FeCN0",
+                  "name": "aboutLabel",
+                  "fill": "#4A9FD8",
+                  "content": "ABOUT US",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "v1GHL",
+                  "name": "aboutTitle",
+                  "fill": "#FFFFFF",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "디스플레이 분야의\n신뢰받는 파트너",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Inter",
+                  "fontSize": 40,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "1segT",
+                  "name": "aboutDesc",
+                  "fill": "#AAAAAA",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "주식회사 제이엠일렉트로닉스는 디스플레이 및 반도체 첨단전략산업 분야에서 기술 혁신을 이끌어가는 기업입니다. 체계적인 품질 관리 시스템과 전문 연구개발 역량을 바탕으로 고객사의 성공적인 제품 개발을 지원합니다.",
+                  "lineHeight": 1.7,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "0a2SK",
+                  "name": "aboutStats",
+                  "gap": 48,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "H6zyr",
+                      "name": "stat1",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "XcOtj",
+                          "name": "stat1Num",
+                          "fill": "#4A9FD8",
+                          "content": "16+",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 48,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "uQPqW",
+                          "name": "stat1Label",
+                          "fill": "#888888",
+                          "content": "전문 인력",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "CPc9n",
+                      "name": "stat2",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "GFcD0",
+                          "name": "stat2Num",
+                          "fill": "#4A9FD8",
+                          "content": "6",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 48,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "b1X3o",
+                          "name": "stat2Label",
+                          "fill": "#888888",
+                          "content": "전문 부서",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "zSoMT",
+                      "name": "stat3",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "RsznV",
+                          "name": "stat3Num",
+                          "fill": "#4A9FD8",
+                          "content": "R&D",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 48,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "slWK1",
+                          "name": "stat3Label",
+                          "fill": "#888888",
+                          "content": "부설연구소 운영",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "zll2c",
+              "name": "aboutImage",
+              "width": 500,
+              "height": 400,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1776318118016.png",
+                "mode": "fill"
+              },
+              "cornerRadius": 16
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Uthpa",
+          "name": "Portfolio Section",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            80,
+            120
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "8XOdq",
+              "name": "portfolioHeader",
+              "layout": "vertical",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "nCAdA",
+                  "name": "portfolioLabel",
+                  "fill": "#4A9FD8",
+                  "content": "CLIENTS",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "mq7t8",
+                  "name": "portfolioTitle",
+                  "fill": "#1A1A1A",
+                  "content": "주요 협력사",
+                  "fontFamily": "Inter",
+                  "fontSize": 40,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "oW0QB",
+                  "name": "portfolioDesc",
+                  "fill": "#666666",
+                  "content": "신뢰를 바탕으로 함께 성장하는 파트너십",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "C3Fh9",
+              "name": "clientLogos",
+              "width": "fill_container",
+              "gap": 48,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "XPZb0",
+                  "name": "client1",
+                  "width": 120,
+                  "height": 60,
+                  "fill": "#F7F8FA",
+                  "cornerRadius": 8,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ikerR",
+                      "name": "client1Text",
+                      "fill": "#888888",
+                      "content": "LG디스플레이",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "WP2ej",
+                  "name": "client2",
+                  "width": 120,
+                  "height": 60,
+                  "fill": "#F7F8FA",
+                  "cornerRadius": 8,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "lVPIm",
+                      "name": "client2Text",
+                      "fill": "#888888",
+                      "content": "삼성SDI",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "26my8",
+                  "name": "client3",
+                  "width": 120,
+                  "height": 60,
+                  "fill": "#F7F8FA",
+                  "cornerRadius": 8,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "AF4qm",
+                      "name": "client3Text",
+                      "fill": "#888888",
+                      "content": "BOE",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "RJ9RB",
+                  "name": "client4",
+                  "width": 120,
+                  "height": 60,
+                  "fill": "#F7F8FA",
+                  "cornerRadius": 8,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "gQx66",
+                      "name": "client4Text",
+                      "fill": "#888888",
+                      "content": "AUO",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ldxUR",
+                  "name": "client5",
+                  "width": 120,
+                  "height": 60,
+                  "fill": "#F7F8FA",
+                  "cornerRadius": 8,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "TqmpZ",
+                      "name": "client5Text",
+                      "fill": "#888888",
+                      "content": "CSOT",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "p5v68",
+                  "name": "client6",
+                  "width": 120,
+                  "height": 60,
+                  "fill": "#F7F8FA",
+                  "cornerRadius": 8,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "IxN7x",
+                      "name": "client6Text",
+                      "fill": "#888888",
+                      "content": "JDI",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "7aHbi",
+          "name": "Contact Section",
+          "width": "fill_container",
+          "fill": "#F7F8FA",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            80,
+            120
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "NlKsD",
+              "name": "contactHeader",
+              "layout": "vertical",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "xq8Tm",
+                  "name": "contactLabel",
+                  "fill": "#4A9FD8",
+                  "content": "CONTACT",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "Jt0vh",
+                  "name": "contactTitle",
+                  "fill": "#1A1A1A",
+                  "content": "문의하기",
+                  "fontFamily": "Inter",
+                  "fontSize": 40,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "gIhR0",
+                  "name": "contactDesc",
+                  "fill": "#666666",
+                  "content": "제이엠일렉트로닉스와 함께 성공적인 프로젝트를 시작하세요",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Pi8fO",
+              "name": "contactContent",
+              "width": "fill_container",
+              "gap": 48,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "m2aIp",
+                  "name": "contactInfo",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "IrpjN",
+                      "name": "infoItem1",
+                      "gap": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "H6iaH",
+                          "name": "infoIcon1",
+                          "width": 48,
+                          "height": 48,
+                          "fill": "#E8F4FC",
+                          "cornerRadius": 24,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "S3j5U",
+                              "name": "infoIconInner1",
+                              "width": 24,
+                              "height": 24,
+                              "iconFontName": "map-pin",
+                              "iconFontFamily": "lucide",
+                              "fill": "#4A9FD8"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "AcpVD",
+                          "name": "infoText1",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "F2rMh",
+                              "name": "infoLabel1",
+                              "fill": "#1A1A1A",
+                              "content": "주소",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "hFJSq",
+                              "name": "infoValue1",
+                              "fill": "#666666",
+                              "content": "충청남도 천안시 (상세 주소)",
+                              "fontFamily": "Inter",
+                              "fontSize": 15,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "uRZwc",
+                      "name": "infoItem2",
+                      "gap": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "HG8Rw",
+                          "name": "infoIcon2",
+                          "width": 48,
+                          "height": 48,
+                          "fill": "#E8F4FC",
+                          "cornerRadius": 24,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "BUJ1T",
+                              "name": "infoIconInner2",
+                              "width": 24,
+                              "height": 24,
+                              "iconFontName": "phone",
+                              "iconFontFamily": "lucide",
+                              "fill": "#4A9FD8"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "tUde1",
+                          "name": "infoText2",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Unacd",
+                              "name": "infoLabel2",
+                              "fill": "#1A1A1A",
+                              "content": "전화",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "4npl9",
+                              "name": "infoValue2",
+                              "fill": "#666666",
+                              "content": "041-XXX-XXXX",
+                              "fontFamily": "Inter",
+                              "fontSize": 15,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "PEFlm",
+                      "name": "infoItem3",
+                      "gap": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "jqcLR",
+                          "name": "infoIcon3",
+                          "width": 48,
+                          "height": 48,
+                          "fill": "#E8F4FC",
+                          "cornerRadius": 24,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "qku5B",
+                              "name": "infoIconInner3",
+                              "width": 24,
+                              "height": 24,
+                              "iconFontName": "mail",
+                              "iconFontFamily": "lucide",
+                              "fill": "#4A9FD8"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "v4VP3",
+                          "name": "infoText3",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "TUShG",
+                              "name": "infoLabel3",
+                              "fill": "#1A1A1A",
+                              "content": "이메일",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "GVlPu",
+                              "name": "infoValue3",
+                              "fill": "#666666",
+                              "content": "info@jmelectronics.co.kr",
+                              "fontFamily": "Inter",
+                              "fontSize": 15,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Du9Fx",
+                      "name": "infoItem4",
+                      "gap": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "hPVxY",
+                          "name": "infoIcon4",
+                          "width": 48,
+                          "height": 48,
+                          "fill": "#E8F4FC",
+                          "cornerRadius": 24,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "FCLjU",
+                              "name": "infoIconInner4",
+                              "width": 24,
+                              "height": 24,
+                              "iconFontName": "timer",
+                              "iconFontFamily": "lucide",
+                              "fill": "#4A9FD8"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "iWjBZ",
+                          "name": "infoText4",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "vZf6o",
+                              "name": "infoLabel4",
+                              "fill": "#1A1A1A",
+                              "content": "업무시간",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "CwtVj",
+                              "name": "infoValue4",
+                              "fill": "#666666",
+                              "content": "평일 09:00 - 18:00",
+                              "fontFamily": "Inter",
+                              "fontSize": 15,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "99qan",
+                  "name": "contactForm",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 16,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#EEF0F2"
+                  },
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "MfsRa",
+                      "name": "formTitle",
+                      "fill": "#1A1A1A",
+                      "content": "빠른 문의",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "77oDP",
+                      "name": "formName",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "jNM66",
+                          "name": "formNameLabel",
+                          "fill": "#666666",
+                          "content": "이름",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "bkobo",
+                          "name": "formNameInput",
+                          "width": "fill_container",
+                          "height": 48,
+                          "fill": "#F7F8FA",
+                          "cornerRadius": 8,
+                          "padding": [
+                            0,
+                            16
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "vQjD3",
+                              "name": "formNamePlaceholder",
+                              "fill": "#AAAAAA",
+                              "content": "홍길동",
+                              "fontFamily": "Inter",
+                              "fontSize": 15,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "2f8iM",
+                      "name": "formEmail",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Tmd64",
+                          "name": "formEmailLabel",
+                          "fill": "#666666",
+                          "content": "이메일",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "hlEPI",
+                          "name": "formEmailInput",
+                          "width": "fill_container",
+                          "height": 48,
+                          "fill": "#F7F8FA",
+                          "cornerRadius": 8,
+                          "padding": [
+                            0,
+                            16
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "RdR1y",
+                              "name": "formEmailPlaceholder",
+                              "fill": "#AAAAAA",
+                              "content": "example@email.com",
+                              "fontFamily": "Inter",
+                              "fontSize": 15,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "4uFzG",
+                      "name": "formMsg",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "VaHAo",
+                          "name": "formMsgLabel",
+                          "fill": "#666666",
+                          "content": "문의내용",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "TnJyA",
+                          "name": "formMsgInput",
+                          "width": "fill_container",
+                          "height": 100,
+                          "fill": "#F7F8FA",
+                          "cornerRadius": 8,
+                          "layout": "vertical",
+                          "padding": 16,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "ps6b5",
+                              "name": "formMsgPlaceholder",
+                              "fill": "#AAAAAA",
+                              "content": "문의하실 내용을 입력해주세요",
+                              "fontFamily": "Inter",
+                              "fontSize": 15,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "u42E1",
+                      "name": "formSubmit",
+                      "width": "fill_container",
+                      "height": 52,
+                      "fill": "#4A9FD8",
+                      "cornerRadius": 8,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "sDpoc",
+                          "name": "formSubmitText",
+                          "fill": "#FFFFFF",
+                          "content": "문의하기",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "jjoEB",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "#1A1A1A",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            48,
+            120
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "i0lE2",
+              "name": "footerTop",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "0EoC2",
+                  "name": "footerLogo",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "guezd",
+                      "name": "footerLogoRow",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "MKvUJ",
+                          "name": "footerLogoIcon",
+                          "width": 32,
+                          "height": 32,
+                          "fill": "#4A9FD8",
+                          "cornerRadius": 6
+                        },
+                        {
+                          "type": "text",
+                          "id": "1xjve",
+                          "name": "footerLogoText",
+                          "fill": "#FFFFFF",
+                          "content": "JM Electronics",
+                          "fontFamily": "Inter",
+                          "fontSize": 20,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "k863M",
+                      "name": "footerTagline",
+                      "fill": "#888888",
+                      "content": "첨단 디스플레이 기술의 선두주자",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "4Gvjq",
+                  "name": "footerLinks",
+                  "gap": 64,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "4LpLS",
+                      "name": "footerCol1",
+                      "layout": "vertical",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "gjR0p",
+                          "name": "footerCol1Title",
+                          "fill": "#FFFFFF",
+                          "content": "회사",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "bcrN6",
+                          "name": "footerCol1Link1",
+                          "fill": "#888888",
+                          "content": "회사소개",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "9M34x",
+                          "name": "footerCol1Link2",
+                          "fill": "#888888",
+                          "content": "연혁",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "IkKrn",
+                          "name": "footerCol1Link3",
+                          "fill": "#888888",
+                          "content": "조직도",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ZxNzh",
+                      "name": "footerCol2",
+                      "layout": "vertical",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "cPRE6",
+                          "name": "footerCol2Title",
+                          "fill": "#FFFFFF",
+                          "content": "서비스",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "fBTDl",
+                          "name": "footerCol2Link1",
+                          "fill": "#888888",
+                          "content": "디스플레이 솔루션",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "jFy6L",
+                          "name": "footerCol2Link2",
+                          "fill": "#888888",
+                          "content": "품질 관리",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "714bK",
+                          "name": "footerCol2Link3",
+                          "fill": "#888888",
+                          "content": "기술 연구",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "YdNAI",
+                      "name": "footerCol3",
+                      "layout": "vertical",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "IdNjO",
+                          "name": "footerCol3Title",
+                          "fill": "#FFFFFF",
+                          "content": "고객지원",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "XVCAU",
+                          "name": "footerCol3Link1",
+                          "fill": "#888888",
+                          "content": "문의하기",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "sc9zR",
+                          "name": "footerCol3Link2",
+                          "fill": "#888888",
+                          "content": "오시는 길",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Jy4Nn",
+                          "name": "footerCol3Link3",
+                          "fill": "#888888",
+                          "content": "FAQ",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "RQLfF",
+              "name": "footerDivider",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "#333333"
+            },
+            {
+              "type": "frame",
+              "id": "b10Kq",
+              "name": "footerBottom",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "4yeri",
+                  "name": "footerCopyright",
+                  "fill": "#666666",
+                  "content": "© 2026 주식회사 제이엠일렉트로닉스. All rights reserved.",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "9UtS8",
+                  "name": "footerSocial",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "fAYbO",
+                      "name": "socialIcon1",
+                      "width": 36,
+                      "height": 36,
+                      "fill": "#333333",
+                      "cornerRadius": 18,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "tHgJP",
+                          "name": "socialIconInner1",
+                          "width": 18,
+                          "height": 18,
+                          "iconFontName": "linkedin",
+                          "iconFontFamily": "lucide",
+                          "fill": "#888888"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "9z8Pj",
+                      "name": "socialIcon2",
+                      "width": 36,
+                      "height": 36,
+                      "fill": "#333333",
+                      "cornerRadius": 18,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "vEHiW",
+                          "name": "socialIconInner2",
+                          "width": 18,
+                          "height": 18,
+                          "iconFontName": "instagram",
+                          "iconFontFamily": "lucide",
+                          "fill": "#888888"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "QNrZb",
+                      "name": "socialIcon3",
+                      "width": 36,
+                      "height": 36,
+                      "fill": "#333333",
+                      "cornerRadius": 18,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "umk4Y",
+                          "name": "socialIconInner3",
+                          "width": 18,
+                          "height": 18,
+                          "iconFontName": "youtube",
+                          "iconFontFamily": "lucide",
+                          "fill": "#888888"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

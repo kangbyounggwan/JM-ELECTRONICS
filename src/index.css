@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  /* JM Electronics 로고 컬러: 하늘색 + 회색 */
+  --color-primary: #5BA4D4;
+  --color-primary-dark: #4A8FC0;
+  --color-secondary: #6B7280;
+  --color-dark: #1F2937;
+  --color-gray: #6B7280;
+  --color-light-gray: #9CA3AF;
+  --color-bg-light: #F8FAFC;
+  --font-family-sans: 'Inter', system-ui, sans-serif;
+  --font-family-mono: ui-monospace, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-sans);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
+}

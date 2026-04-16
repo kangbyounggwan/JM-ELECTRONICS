@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(npm search react-chrono react-timeline --json)",
+      "Bash(curl -s \"https://registry.npmjs.org/-/v1/search?text=react+timeline+horizontal&size=10\")",
+      "Bash(curl -s \"https://registry.npmjs.org/react-chrono\")",
+      "Bash(cp \"C:/Users/USER/Desktop/제이엠 일렉트로닉스/ISO 환경경영 인증.png\" \"c:/Users/USER/jm-electronics-landing/public/certs/iso-environment.png\")",
+      "Bash(cp \"C:/Users/USER/Desktop/제이엠 일렉트로닉스/UL 인증서.png\" \"c:/Users/USER/jm-electronics-landing/public/certs/ul.png\")",
+      "Bash(cp \"C:/Users/USER/Desktop/제이엠 일렉트로닉스/기업부설 연구소.png\" \"c:/Users/USER/jm-electronics-landing/public/certs/research-center.png\")",
+      "Bash(cp \"C:/Users/USER/Desktop/제이엠 일렉트로닉스/우주항공 품질경영.png\" \"c:/Users/USER/jm-electronics-landing/public/certs/as9100.png\")",
+      "Bash(cp \"C:/Users/USER/Desktop/제이엠 일렉트로닉스/이노비즈.png\" \"c:/Users/USER/jm-electronics-landing/public/certs/innobiz.png\")",
+      "Bash(cp \"C:/Users/USER/Desktop/제이엠 일렉트로닉스/ISO 품질 경영 시스템.png\" \"c:/Users/USER/jm-electronics-landing/public/certs/iso-quality.png\")",
+      "Bash(cp \"C:/Users/USER/Desktop/제이엠 일렉트로닉스/ISO 환경 경영 인증.png\" \"c:/Users/USER/jm-electronics-landing/public/certs/iso-environment.png\")",
+      "Bash(cp \"C:/Users/USER/Desktop/제이엠 일렉트로닉스/기업 부설 연구소.png\" \"c:/Users/USER/jm-electronics-landing/public/certs/research-center.png\")",
+      "Bash(cp \"C:/Users/USER/Desktop/제이엠 일렉트로닉스/우주항공 인증서.png\" \"c:/Users/USER/jm-electronics-landing/public/certs/as9100.png\")",
+      "Bash(cp \"C:/Users/USER/Desktop/제이엠 일렉트로닉스/RS Automation.png\" \"c:/Users/USER/jm-electronics-landing/public/partners/rs-automation.png\")",
+      "Bash(cp \"C:/Users/USER/Desktop/제이엠 일렉트로닉스/ACOT.png\" \"c:/Users/USER/jm-electronics-landing/public/partners/acot.png\")",
+      "Bash(cp \"C:/Users/USER/Desktop/제이엠 일렉트로닉스/ATECAP.png\" \"c:/Users/USER/jm-electronics-landing/public/partners/atecap.png\")",
+      "Bash(cp \"C:/Users/USER/Desktop/제이엠 일렉트로닉스/i3SYSTEM.png\" \"c:/Users/USER/jm-electronics-landing/public/partners/i3system.png\")",
+      "Bash(cp \"C:/Users/USER/Desktop/제이엠 일렉트로닉스/INTELLIAN.png\" \"c:/Users/USER/jm-electronics-landing/public/partners/intellian.png\")",
+      "Bash(cp \"C:/Users/USER/Desktop/제이엠 일렉트로닉스/KMDATA.png\" \"c:/Users/USER/jm-electronics-landing/public/partners/kmdata.png\")",
+      "Bash(git init)",
+      "Bash(git remote add origin https://github.com/kangbyounggwan/JM-ELECTRONICS.git)",
+      "Bash(git add .)"
+    ]
+  }
+}
