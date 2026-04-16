@@ -18,7 +18,7 @@ const baseUrl = 'https://www.jmelectronics.kr'
 const defaultOgImage = 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=630&fit=crop&q=80'
 
 export default function SEO({ title, description, keywords, path = '', image }: SEOProps) {
-  const { lang, t } = useLanguage()
+  const { lang } = useLanguage()
 
   const siteTitle = lang === 'ko' ? 'JM Electronics | 제이엠일렉트로닉스' : 'JM Electronics Co., Ltd.'
   const fullTitle = title ? `${title} | ${siteTitle}` : siteTitle
