@@ -1,7 +1,11 @@
 {
   "rewrites": [
     {
-      "source": "/((?!assets|sitemap.xml|robots.txt|logo.png|certs).*)",
+      "source": "/favicon.ico",
+      "destination": "/logo.png"
+    },
+    {
+      "source": "/((?!assets|sitemap.xml|robots.txt|logo.png|favicon.svg|certs|partners|icons.svg).*)",
       "destination": "/index.html"
     }
   ]
