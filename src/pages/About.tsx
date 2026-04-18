@@ -145,20 +145,87 @@ export default function About() {
         </div>
       </section>
 
-      {/* Core Values */}
-      <section className="py-24 bg-white">
+      {/* Core Values - Enhanced */}
+      <section className="py-24 bg-gradient-to-br from-slate-50 via-white to-blue-50 overflow-hidden">
         <SectionHeader number="02" subtitle="Core Values" title={t.about.coreValuesTitle} variant="light" />
         <div className="max-w-7xl mx-auto px-8">
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+          {/* Desktop: Featured Layout */}
+          <div className="hidden md:grid md:grid-cols-5 gap-5">
             {coreValues.map((item, i) => (
               <ScrollReveal key={i} animation="fade-up" delay={i * 100}>
-                <div className="bg-bg-light rounded-2xl p-6 text-center shadow-sm hover:shadow-md transition-shadow duration-300 h-full">
-                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                    <item.icon className="w-7 h-7 text-primary" />
+                <div className="group relative h-[320px] perspective-1000">
+                  {/* Card */}
+                  <div className="relative h-full bg-white rounded-3xl p-6 shadow-lg border border-gray-100
+                    transition-all duration-500 ease-out
+                    hover:shadow-2xl hover:-translate-y-3 hover:border-primary/30
+                    overflow-hidden">
+
+                    {/* Background Gradient on Hover */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary/0 to-primary/0
+                      group-hover:from-primary/5 group-hover:to-blue-500/10
+                      transition-all duration-500 rounded-3xl" />
+
+                    {/* Decorative Circle */}
+                    <div className="absolute -top-10 -right-10 w-32 h-32 bg-primary/5 rounded-full
+                      group-hover:scale-150 group-hover:bg-primary/10 transition-all duration-700" />
+
+                    {/* Content */}
+                    <div className="relative z-10 h-full flex flex-col items-center text-center">
+                      {/* Icon Container */}
+                      <div className="relative mb-5">
+                        <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary/10 to-blue-500/10
+                          flex items-center justify-center
+                          group-hover:from-primary group-hover:to-blue-600
+                          group-hover:scale-110 group-hover:rotate-3
+                          transition-all duration-500 ease-out shadow-sm group-hover:shadow-lg">
+                          <item.icon className="w-9 h-9 text-primary group-hover:text-white transition-colors duration-300" />
+                        </div>
+                        {/* Pulse Ring */}
+                        <div className="absolute inset-0 rounded-2xl border-2 border-primary/20
+                          group-hover:scale-125 group-hover:opacity-0 transition-all duration-700" />
+                      </div>
+
+                      {/* Text */}
+                      <h3 className="text-xl font-bold text-dark mb-1 group-hover:text-primary transition-colors duration-300">
+                        {item.title}
+                      </h3>
+                      <p className="text-primary/80 text-sm font-semibold mb-3 tracking-wide">
+                        {item.subtitle}
+                      </p>
+
+                      {/* Description - Reveal on Hover */}
+                      <div className="flex-1 flex items-center">
+                        <p className="text-gray text-sm leading-relaxed opacity-70 group-hover:opacity-100
+                          transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+                          {item.desc}
+                        </p>
+                      </div>
+
+                      {/* Bottom Accent Line */}
+                      <div className="w-0 h-1 bg-gradient-to-r from-primary to-blue-500 rounded-full
+                        group-hover:w-16 transition-all duration-500 mt-4" />
+                    </div>
                   </div>
-                  <h3 className="text-lg font-bold text-dark mb-1">{item.title}</h3>
-                  <p className="text-primary text-sm font-medium mb-2">{item.subtitle}</p>
-                  <p className="text-gray text-xs leading-relaxed hidden md:block">{item.desc}</p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+
+          {/* Mobile: Swipe Cards */}
+          <div className="md:hidden space-y-4">
+            {coreValues.map((item, i) => (
+              <ScrollReveal key={i} animation="fade-up" delay={i * 80}>
+                <div className="group bg-white rounded-2xl p-5 shadow-md border border-gray-100
+                  flex items-center gap-5 active:scale-[0.98] transition-transform">
+                  <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-primary to-blue-600
+                    flex items-center justify-center flex-shrink-0 shadow-lg">
+                    <item.icon className="w-7 h-7 text-white" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg font-bold text-dark">{item.title}</h3>
+                    <p className="text-primary text-sm font-medium">{item.subtitle}</p>
+                    <p className="text-gray text-xs mt-1 line-clamp-2">{item.desc}</p>
+                  </div>
                 </div>
               </ScrollReveal>
             ))}
