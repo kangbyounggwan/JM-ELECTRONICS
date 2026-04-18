@@ -189,14 +189,14 @@ export default function About() {
                       <h3 className="text-xl font-bold text-dark mb-1 group-hover:text-primary transition-colors duration-300">
                         {item.title}
                       </h3>
-                      <p className="text-primary/80 text-sm font-semibold mb-3 tracking-wide">
+                      <p className="text-primary text-base font-semibold mb-4 tracking-wide">
                         {item.subtitle}
                       </p>
 
-                      {/* Description - Reveal on Hover */}
+                      {/* Description */}
                       <div className="flex-1 flex items-center">
-                        <p className="text-gray text-sm leading-relaxed opacity-70 group-hover:opacity-100
-                          transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+                        <p className="text-gray-600 text-base leading-relaxed
+                          transform translate-y-1 group-hover:translate-y-0 transition-all duration-300">
                           {item.desc}
                         </p>
                       </div>
@@ -224,7 +224,7 @@ export default function About() {
                   <div className="flex-1 min-w-0">
                     <h3 className="text-lg font-bold text-dark">{item.title}</h3>
                     <p className="text-primary text-sm font-medium">{item.subtitle}</p>
-                    <p className="text-gray text-xs mt-1 line-clamp-2">{item.desc}</p>
+                    <p className="text-gray-600 text-sm mt-1 line-clamp-2">{item.desc}</p>
                   </div>
                 </div>
               </ScrollReveal>
